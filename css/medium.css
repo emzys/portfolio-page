@@ -1,0 +1,33 @@
+.underline {
+  width: 400px;
+}
+
+.container .about {
+  padding: 30px;
+}
+
+.container .about-img {
+  height: 250px;
+}
+
+.container .dot {
+  display: block;
+}
+
+.container .slick {
+  margin: 30px;
+}
+
+.container .slick .card-deck {
+  width: 600px;
+  height: 700px;
+}
+
+.container .slick h2 {
+  font-size: 35px;
+}
+
+#contact .contact-img {
+  background-image: url(../img/contact/contact-md.jpg);
+}
+/*# sourceMappingURL=medium.css.map */
