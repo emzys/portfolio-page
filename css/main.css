@@ -164,18 +164,55 @@ header {
   border-radius: 50%;
 }
 
+.container .dot-black {
+  background-color: #222;
+}
+
+.container .dot-blue {
+  background-color: #039dff;
+}
+
+.container .dot-lg {
+  height: 125px;
+  width: 125px;
+}
+
 .container .dot-md {
   height: 100px;
-  margin: 50px;
+  width: 100px;
 }
 
 .container .dot-sm {
   height: 50px;
-  border-radius: 50%;
+  width: 50px;
+}
+
+.container .dot-xs {
+  height: 25px;
+  width: 25px;
+}
+
+.container .dot-margin {
+  margin: 50px;
 }
 
 .container h1, .container h2 {
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.container a {
+  color: #039dff;
+}
+
+.container a:hover {
+  color: #77cafd;
+  text-decoration: none;
+}
+
+.container .between {
+  display: none;
+  height: 30px;
 }
 
 .container .slick {
@@ -195,9 +232,10 @@ header {
 }
 
 .container .card-deck .card img {
-  height: 350px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  margin-top: 20px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  top: 0;
 }
 
 .container .card-deck h5 {
@@ -207,9 +245,10 @@ header {
 
 #contact .contact-img {
   position: relative;
-  height: 60vh;
-  background-image: url(../img/contact/contact-sm.jpg);
+  height: 80vh;
+  background-image: url(../img/contact/contact-1-sm.jpg);
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
   z-index: 0;
 }
@@ -218,7 +257,7 @@ header {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: -10;
 }
 
@@ -231,5 +270,56 @@ header {
   color: #e9ecef;
   text-shadow: 2px 2px black;
   padding: 20px 0;
+}
+
+#contact .contact-text p {
+  font-size: 20px;
+}
+
+#contact .contact-text .social-media i {
+  font-size: 50px;
+  color: #e9ecef;
+  padding: 15px;
+}
+
+#contact .contact-text .social-media i:hover {
+  color: #039dff;
+}
+
+@media (min-width: 320px) {
+  .container .card-deck h5 {
+    font-size: 22px;
+  }
+  .container .card-deck .card img {
+    margin-top: 10px;
+  }
+  .container .card-deck .card .card-body, .container .card-deck .card .card-footer {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 411px) {
+  h2 {
+    font-size: 40px;
+  }
+  .container .slick h2 {
+    font-size: 40px;
+  }
+  .container .card-deck h5 {
+    font-size: 24px;
+  }
+  .container .card-deck .card img {
+    margin-top: 20px;
+  }
+  .container .card-deck .card .card-body, .container .card-deck .card .card-footer {
+    padding: 20px;
+  }
+  #contact .contact-text p {
+    font-size: 23px;
+  }
+  #contact .contact-text .social-media i {
+    font-size: 80px;
+    padding: 18px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

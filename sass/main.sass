@@ -143,18 +143,47 @@ header
         display: none
         border-radius: 50%
 
+    .dot-black
+        background-color: #222 
+
+    .dot-blue
+        background-color: $blue-color
+
+    .dot-lg
+        height: 125px
+        width: 125px
 
     .dot-md
         height: 100px
-        margin: 50px
+        width: 100px
 
     .dot-sm
         height: 50px
-        border-radius: 50%
+        width: 50px
+
+    .dot-xs
+        height: 25px
+        width: 25px
        
+    .dot-margin
+        margin: 50px
             
     h1, h2
         text-align: center
+        margin-bottom: 20px
+
+    a 
+        color: $blue-color
+
+    a:hover 
+        // color: #73b9fa
+        color: #77cafd 
+        // text-shadow: 2px 2px black
+        text-decoration: none
+
+    .between
+        display: none
+        height: 30px
 
     .slick
         margin-top: 30px
@@ -171,8 +200,13 @@ header
         .card
             // height: 610px
             img
-                height: 350px
-                object-fit: contain
+                margin-top: 20px
+                // height: 350px
+                object-fit: fill
+                top: 0
+
+            .card-img-top
+                // margin: 0
 
         h5 
             font-style: italic
@@ -187,13 +221,15 @@ header
 
 //CONTACT
 #contact
+    // margin-bottom: 0
+
     .contact-img
         position: relative
-        height: 60vh
-        background-image: url(../img/contact/contact-sm.jpg)
+        height: 80vh
+        background-image: url(../img/contact/contact-1-sm.jpg)
         background-position: center
         // object-fit: contain
-        // background-attachment: fixed
+        background-attachment: fixed
         background-size: cover
         z-index: 0
 
@@ -201,8 +237,7 @@ header
         position: absolute
         width: 100%
         height: 100%
-        background-color: rgba(0,0,0,.5)
-        // background-color: rgba(0,9,27,.7)
+        background-color: rgba(0,0,0,.8)
         z-index: -10
 
     .contact-text 
@@ -214,16 +249,70 @@ header
         text-shadow: 2px 2px black
         padding: 20px 0
 
+        p 
+            font-size: 20px
+
+        .social-media i
+            font-size: 50px
+            color: $gray-color
+            padding: 15px
+
+        .social-media i:hover
+            color: $blue-color
+
+
 
 // font-family: 'Playfair Display', serif;
 // font-family: 'Montserrat', sans-serif;
 
 
-@media (min-width: 375px)
-    header
-        h1 
+@media (min-width: 320px)
+    .container
+        .card-deck
+            h5
+                font-size: 22px
+
+            p 
+                14px
+
+            .card
+                img
+                    margin-top: 10px
+
+                .card-body, .card-footer
+                    padding: 10px
+
 
             
-// @media (min-width: 414px)
-//     .hero-text
-//         padding: 25px
+@media (min-width: 411px)
+
+    h2
+        font-size: 40px
+
+    .container
+        .slick
+            h2
+                font-size: 40px
+        
+        .card-deck
+            h5
+                font-size: 24px
+
+            p 
+                16px
+
+            .card
+                img
+                    margin-top: 20px
+
+                .card-body, .card-footer
+                    padding: 20px
+
+    #contact
+        .contact-text 
+            p 
+                font-size: 23px
+
+            .social-media i
+                font-size: 80px
+                padding: 18px

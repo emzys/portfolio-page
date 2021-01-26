@@ -10,24 +10,40 @@
   height: 250px;
 }
 
-.container .dot {
+.container h1 {
+  font-size: 70px;
+}
+
+.container h2 {
+  font-size: 55px;
+}
+
+.container .between {
   display: block;
 }
 
-.container .slick {
-  margin: 30px;
-}
-
-.container .slick .card-deck {
-  width: 600px;
-  height: 700px;
-}
-
 .container .slick h2 {
-  font-size: 35px;
+  font-size: 55px;
+}
+
+.container .card-deck {
+  width: 550px;
 }
 
 #contact .contact-img {
-  background-image: url(../img/contact/contact-md.jpg);
+  background-image: url(../img/contact/contact-2-md.jpg);
+}
+
+#contact .contact-text h2 {
+  font-size: 60px;
+}
+
+#contact .contact-text p {
+  font-size: 32px;
+}
+
+#contact .contact-text .social-media i {
+  font-size: 110px;
+  padding: 25px;
 }
 /*# sourceMappingURL=medium.css.map */
