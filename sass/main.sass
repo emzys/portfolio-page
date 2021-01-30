@@ -14,7 +14,7 @@ body
     position: relative
     font-family: 'Montserrat', sans-serif
     background-color: $gray-color 
-    color: #222
+    color: #222 
 
 .underline 
     margin: 0 auto
@@ -31,9 +31,8 @@ nav
     
     a, i 
         padding: 0 10px
-        color: $gray-color        
+        color: $gray-color
         text-shadow: 2px 2px black;
-        font-size: 28px
         transition: color .3s
 
     a:hover, i:hover 
@@ -41,7 +40,13 @@ nav
 
     .active
         color: $blue-color
- 
+
+    i 
+        font-size: 28px
+
+    .navbar-nav
+        font-size: 17px
+
 // .nav-link
 //     padding: 8px 15px
 
@@ -87,7 +92,7 @@ header
     h1 
         // padding: 10px
         text-transform: uppercase
-        // font-size: 30px
+        // font-size: 48px
         // font-weight: bold
         margin: 0 15px
 
@@ -95,6 +100,7 @@ header
         font-family: 'Playfair Display', serif
         font-style: italic
         margin: 15px
+        // font-size: 20px
 
 .arrow
     position: absolute
@@ -138,6 +144,9 @@ header
     .about-img
         height: 200px
         border-radius: 50%
+        
+    .lead
+        font-weight: bold
 
     .dot
         display: none
@@ -150,16 +159,16 @@ header
         background-color: $blue-color
 
     .dot-lg
-        height: 125px
-        width: 125px
+        height: 90px
+        width: 90px
 
     .dot-md
-        height: 100px
-        width: 100px
+        height: 70px
+        width: 70px
 
     .dot-sm
-        height: 50px
-        width: 50px
+        height: 40px
+        width: 40px
 
     .dot-xs
         height: 25px
@@ -200,23 +209,77 @@ header
         .card
             // height: 610px
             img
-                margin-top: 20px
+                margin-top: 10px
                 // height: 350px
                 object-fit: fill
                 top: 0
 
+            .card-body, .card-footer
+                padding: 10px
+            
             .card-img-top
                 // margin: 0
 
         h5 
             font-style: italic
             // font-weight: bold
-            font-size: 24px
+            font-size: 22px
+        
+        p 
+            14px
 
-        // .card-footer
-        //         bottom: 0
 
 
+//PROJECT SECTION
+#projects
+    .project-list
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        max-width: 2560px
+        padding: 70px 20px
+
+        .project-cards
+            margin-top: 15px 
+
+        .card
+            width: 280px
+            margin: 10px
+            padding: 0
+            transition: transform .3s
+
+            img
+                height: 280px
+                // width: 276px
+                box-shadow: 0 0 2px black
+
+            .card-title
+                margin: 0
+                font-weight: bold
+        
+        .card:hover
+            transform: scale(.97)
+                
+
+        .btn
+            padding: 2px 10px
+            background-color: #222
+            border: 1px solid $gray-color
+            transition: background-color .3s, border .3s
+
+            a
+                color: $gray-color
+                text-decoration: none
+                transition: color .3s
+
+        .btn:hover
+            background-color: $gray-color
+            border: 1px solid #222
+    
+            a:hover 
+                color: #222
+        
 
 
 //CONTACT
@@ -262,30 +325,24 @@ header
 
 
 
+
+
 // font-family: 'Playfair Display', serif;
 // font-family: 'Montserrat', sans-serif;
 
 
-@media (min-width: 320px)
-    .container
-        .card-deck
-            h5
-                font-size: 22px
+@media (min-width: 360px)
 
-            p 
-                14px
-
-            .card
-                img
-                    margin-top: 10px
-
-                .card-body, .card-footer
-                    padding: 10px
-
-
+    nav
+        .navbar-nav
+            font-size: 20px
             
 @media (min-width: 411px)
 
+    nav
+        .navbar-nav
+            font-size: 22px
+    
     h2
         font-size: 40px
 
