@@ -2,6 +2,10 @@
   width: 400px;
 }
 
+nav .navbar-nav {
+  font-size: 28px;
+}
+
 .container .about {
   padding: 30px;
 }

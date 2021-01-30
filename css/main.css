@@ -34,7 +34,6 @@ nav a, nav i {
   padding: 0 10px;
   color: #e9ecef;
   text-shadow: 2px 2px black;
-  font-size: 28px;
   -webkit-transition: color .3s;
   transition: color .3s;
 }
@@ -45,6 +44,14 @@ nav a:hover, nav i:hover {
 
 nav .active {
   color: #039dff;
+}
+
+nav i {
+  font-size: 28px;
+}
+
+nav .navbar-nav {
+  font-size: 17px;
 }
 
 .shadow-bg {
@@ -159,6 +166,10 @@ header {
   border-radius: 50%;
 }
 
+.container .lead {
+  font-weight: bold;
+}
+
 .container .dot {
   display: none;
   border-radius: 50%;
@@ -173,18 +184,18 @@ header {
 }
 
 .container .dot-lg {
-  height: 125px;
-  width: 125px;
+  height: 90px;
+  width: 90px;
 }
 
 .container .dot-md {
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
 }
 
 .container .dot-sm {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
 }
 
 .container .dot-xs {
@@ -232,15 +243,91 @@ header {
 }
 
 .container .card-deck .card img {
-  margin-top: 20px;
+  margin-top: 10px;
   -o-object-fit: fill;
      object-fit: fill;
   top: 0;
 }
 
+.container .card-deck .card .card-body, .container .card-deck .card .card-footer {
+  padding: 10px;
+}
+
 .container .card-deck h5 {
   font-style: italic;
-  font-size: 24px;
+  font-size: 22px;
+}
+
+#projects .project-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 2560px;
+  padding: 70px 20px;
+}
+
+#projects .project-list .project-cards {
+  margin-top: 15px;
+}
+
+#projects .project-list .card {
+  width: 280px;
+  margin: 10px;
+  padding: 0;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+#projects .project-list .card img {
+  height: 280px;
+  -webkit-box-shadow: 0 0 2px black;
+          box-shadow: 0 0 2px black;
+}
+
+#projects .project-list .card .card-title {
+  margin: 0;
+  font-weight: bold;
+}
+
+#projects .project-list .card:hover {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+#projects .project-list .btn {
+  padding: 2px 10px;
+  background-color: #222;
+  border: 1px solid #e9ecef;
+  -webkit-transition: background-color .3s, border .3s;
+  transition: background-color .3s, border .3s;
+}
+
+#projects .project-list .btn a {
+  color: #e9ecef;
+  text-decoration: none;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+#projects .project-list .btn:hover {
+  background-color: #e9ecef;
+  border: 1px solid #222;
+}
+
+#projects .project-list .btn:hover a:hover {
+  color: #222;
 }
 
 #contact .contact-img {
@@ -286,19 +373,16 @@ header {
   color: #039dff;
 }
 
-@media (min-width: 320px) {
-  .container .card-deck h5 {
-    font-size: 22px;
-  }
-  .container .card-deck .card img {
-    margin-top: 10px;
-  }
-  .container .card-deck .card .card-body, .container .card-deck .card .card-footer {
-    padding: 10px;
+@media (min-width: 360px) {
+  nav .navbar-nav {
+    font-size: 20px;
   }
 }
 
 @media (min-width: 411px) {
+  nav .navbar-nav {
+    font-size: 22px;
+  }
   h2 {
     font-size: 40px;
   }
