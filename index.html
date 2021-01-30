@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Emilia Zysk - Portfolio Website</title>
+  <link rel="shortcut icon" href="/img/eye.ico" type="image/x-icon">
+  <title>Emilia Zysk Personal Website</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link
@@ -24,18 +25,18 @@
 
 <body data-spy="scroll" data-target="#navbar">
 
-  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+  <nav class="navbar navbar-expand-lg fixed-top " id="navbar">
     <a class="navbar-brand" href="#"><i class="fas fa-eye"></i></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-auto">
+      <div class="navbar-nav ml-auto text-right">
         <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <!-- span z (current) uzywamy przy podstronach!!!!!!!! -->
+        <!-- span with (current) is used for subpages -->
         <a class="nav-item nav-link" href="#about">About Me</a>
-        <a class="nav-item nav-link" href="#work">Work</a>
+        <a class="nav-item nav-link" href="#projects">Projects</a>
         <a class="nav-item nav-link" href="#contact">Contact</a>
       </div>
     </div>
@@ -46,9 +47,7 @@
       <div class="hero-shadow"></div>
       <div class="hero-text">
         <h1 class="animate__animated animate__fadeIn">emilia zyśk</h1>
-        <!-- <h1>emilia zyśk</h1> -->
         <p class="animate__animated animate__fadeIn animate__delay-1s">web developer & programmer</p>
-        <!-- <a class="btn btn-outline-light" href="#about"><p>Welcome to my website!</p></i></a> -->
       </div>
       <a href="#about" class="arrow"><i class="fas fa-chevron-down animate__animated animate__bounce"></i></a>
     </div>
@@ -59,16 +58,12 @@
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <div class="about about-photo">
-            <!-- <div class="dot dot-xs dot-black dot-margin"></div> -->
-            <!-- <div class="dot dot-sm dot-black dot-margin"></div> -->
             <img src="/img/about/about1profilephoto.jpg" class="about-img" alt="Profile photo">
-            <!-- <div class="dot dot-sm dot-black dot-margin"></div> -->
-            <!-- <div class="dot dot-xs dot-black dot-margin"></div> -->
           </div>
           <div class="about about-text">
             <h1 class="display-4">Hi, I'm Emilia.</h1>
-            <!-- <p class="lead">Welcome to my portfolio page. </p> -->
-            <p>Welcome to my portfolio page. I’m a web developer and an aspiring software developer.</p>
+            <!-- <p>Welcome to my portfolio page. I’m a web developer and an aspiring software developer.</p> -->
+            <p>Welcome to my portfolio page. I’m an aspiring web and software developer.</p>
             <p>I find the world of programming intriguing. It's technical and there are rules you have to follow, and
               yet there's also room for creativity. What I love most about it is that there’s an opportunity to learn
               something new every day. Each step of the way brings new challenges, which makes it all the more exciting
@@ -76,7 +71,8 @@
             <p>I have a background in international relations and communication. I speak Polish, English, Japanese, and
               a little bit of Spanish.</p>
             <p>Scroll down for more information about my <a href="#skills">skills</a> and <a
-                href="#interests">interests</a>, and check out the <a href="#work">work</a> section to see what I’ve
+                href="#interests">interests</a>, and check out the <a href="#projects">projects</a> section to see what
+              I’ve
               been up to.</p>
           </div>
         </div>
@@ -87,56 +83,50 @@
       <div class="jumbotron jumbotron-fluid" id="skills">
         <div class="container right-to-left">
           <div class="about about-photo">
-            <div class="dot dot-blue dot-xs dot-margin"></div>
-            <!-- <div class="dot dot-black dot-sm dot-margin"></div> --> 
-            <!-- <div class="dot dot-blue dot-sm dot-margin"></div> -->
+            <div class="dot dot-black dot-xs"></div>
+            <div class="dot dot-blue dot-sm dot-margin"></div>
             <img src="/img/about/about2skills.png" class="about-img" alt="Skills section">
-            <!-- <div class="dot dot-black dot-sm dot-margin"></div>
-              <!-- <div class="dot dot-blue dot-sm dot-margin"></div> -->
-              <div class="dot dot-blue dot-xs dot-margin"></div>
+            <div class="dot dot-blue dot-sm dot-margin"></div>
+            <div class="dot dot-black dot-xs"></div>
           </div>
           <div class="about about-text">
             <h2>My skills</h2>
 
-            <div class="courses-completed">
+            <div class="courses courses-completed">
               <p class="lead">Completed courses:</p>
-            <ul>
-              <li><a href="https://www.udemy.com/certificate/UC-8adacc8d-b754-4d25-abf9-13b6939962a0/"
-                  target="_blank">Web Development Course Part 1</a> - Udemy (April - May 2020)</li>
-              <p>　→　HTML, CSS, RWD</p>
-              <li><a href="https://www.udemy.com/certificate/UC-6e86c9a6-4532-41eb-aa42-b364ecf95f72/"
-                  target="_blank">Web Development Course Part 2</a> - Udemy (June - July 2020)</li>
-              <p>　→　SASS, JavaScript, Flexbox, Bootstrap</p>
-              <li><a href="https://www.udemy.com/certificate/UC-189fc961-2701-43e5-b527-505c63a7c60e/"
-                  target="_blank">JavaScript Course</a> - Udemy (August - September 2020)</li>
-              <p>　→　JavaScript, JSON, Ajax, API</p>
-            </ul>
+              <ul>
+                <li><a href="https://www.udemy.com/certificate/UC-8adacc8d-b754-4d25-abf9-13b6939962a0/"
+                    target="_blank">Web Development Course Part 1</a> - Udemy (May 2020)</li>
+                <p>　→　HTML, CSS, RWD</p>
+                <li><a href="https://www.udemy.com/certificate/UC-6e86c9a6-4532-41eb-aa42-b364ecf95f72/"
+                    target="_blank">Web Development Course Part 2</a> - Udemy (July 2020)</li>
+                <p>　→　SASS, JavaScript, Flexbox, Bootstrap</p>
+                <li><a href="https://www.udemy.com/certificate/UC-189fc961-2701-43e5-b527-505c63a7c60e/"
+                    target="_blank">JavaScript Course</a> - Udemy (August - September 2020)</li>
+                <p>　→　JavaScript, JSON, Ajax, API</p>
+              </ul>
             </div>
 
-            <div class="courses-enrolled">
+            <div class="courses courses-enrolled">
               <p class="lead">Currently enrolled:</p>
-            <ul>
-              <li><a href="http://" target="_blank">The Complete Web Development Bootcamp</a> - Udemy (September 2020 -
-                currently)</li>
-              <p>　→　HTML, CSS, Bootstrap (w/Grid, Flexbox), Web Design (UI&UX), JavaScript, jQuery, Unix Command Line,
-                Node.js, Express.js, API & more </p>
-              <li><a href="https://www.udemy.com/course/javascript-beginners-complete-tutorial/" target="_blank">The
-                  Modern Javascript Bootcamp Course</a> - Udemy (November 2020 - currently)</li>
-              <p>　→　JavaScript, API, Node.js Command Line Tools, JSON, Express & more</p>
-              <li><a href="https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/"
-                  target="_blank">JavaScript Algorithms and Data Structures Masterclass</a> - Udemy (January 2021 -
-                currently)</li>
-              <p></p>
-              <li><a href="https://info.lewagon.com/programming-for-everybody-tokyo" target="_blank">Programming for
-                  Everybody</a> - Le Wagon Tokyo (January 2021 - currently)</li>
-              <p>　→　Ruby</p>
-            </ul>
+              <ul>
+                <li><a href="http://" target="_blank">The Complete Web Development Bootcamp</a> - Udemy (September 2020
+                  -
+                  currently)</li>
+                <p>　→　HTML, CSS, Bootstrap (w/Grid, Flexbox), Web Design (UI&UX), JavaScript, jQuery, Unix Command Line,
+                  Node.js, Express.js, API & more </p>
+                <li><a href="https://www.udemy.com/course/javascript-beginners-complete-tutorial/" target="_blank">The
+                    Modern Javascript Bootcamp Course</a> - Udemy (November 2020 - currently)</li>
+                <p>　→　JavaScript, API, Node.js Command Line Tools, JSON, Express & more</p>
+                <li><a href="https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/"
+                    target="_blank">JavaScript Algorithms and Data Structures Masterclass</a> - Udemy (January 2021 -
+                  currently)</li>
+                <p></p>
+                <li><a href="https://info.lewagon.com/programming-for-everybody-tokyo" target="_blank">Programming for
+                    Everybody</a> - Le Wagon Tokyo (January 2021 - currently)</li>
+                <p>　→　Ruby foundations & syntax, core notions of programming</p>
+              </ul>
             </div>
-            <!-- <div class="col-sm-6 col-md-4">
-              <p>tutaj ikona</p>
-              <h3>tutaj tytul</h3>
-              <p>tutaj opis</p>
-            </div> -->
           </div>
         </div>
         <div class="underline"></div>
@@ -295,26 +285,80 @@
 
 
 
-    <section id="work">
+    <section id="projects">
       <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <div class="about about-photo">
-            <img src="/img/1.png" class="about-img" alt="My photo">
+        <div class="project-list">
+          <h1 class="display-4 text-center">My projects</h1>
+          <div class="project-cards row justify-content-center">
+            <div class="card text-center">
+              <div class="card-header"><h5 class="card-title">ToDo List</h5></div>
+              <img class="card-img-top" src="/img/projects/1todo-list.png" alt="Project interface visualisation">
+              <div class="card-body">
+                <!-- <h5 class="card-title">ToDo List</h5>                 -->
+                <p class="card-text">A to-do list creator.</p>
+                <p class="card-text">HTML, CSS, JavaScript</p>
+              </div>
+              <!-- <div class="card-footer text-muted"> -->
+              <div class="card-footer">
+                <p>View on GitHub:</p>
+                <div class="btn-group">
+                  <button class="btn"><a href="https://github.com/emzys/ToDo-List">Repository</a></button>
+                  <button class="btn"><a href="https://emzys.github.io/ToDo-List/">Pages (live)</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="card text-center">
+              <div class="card-header"><h5 class="card-title">ToDo List</h5></div>
+              <img class="card-img-top" src="/img/projects/1todo-list.png" alt="Project interface visualisation">
+              <div class="card-body">
+                <!-- <h5 class="card-title">ToDo List</h5>                 -->
+                <p class="card-text">A to-do list creator. longer text to make a point.</p>
+                <p class="card-text">HTML, CSS, JavaScript</p>
+              </div>
+              <!-- <div class="card-footer text-muted"> -->
+              <div class="card-footer">
+                <p>View on GitHub:</p>
+                <div class="btn-group">
+                  <button class="btn"><a href="https://github.com/emzys/ToDo-List">Repository</a></button>
+                  <button class="btn"><a href="https://emzys.github.io/ToDo-List/">Pages (live)</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="card text-center">
+              <div class="card-header"><h5 class="card-title">ToDo List</h5></div>
+              <img class="card-img-top" src="/img/projects/1todo-list.png" alt="Project interface visualisation">
+              <div class="card-body">
+                <!-- <h5 class="card-title">ToDo List</h5>                 -->
+                <p class="card-text">A to-do list creator.</p>
+                <p class="card-text">HTML, CSS, JavaScript</p>
+              </div>
+              <!-- <div class="card-footer text-muted"> -->
+              <div class="card-footer">
+                <p>View on GitHub:</p>
+                <div class="btn-group">
+                  <button class="btn"><a href="https://github.com/emzys/ToDo-List">Repository</a></button>
+                  <button class="btn"><a href="https://emzys.github.io/ToDo-List/">Pages (live)</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="card text-center">
+              <div class="card-header"><h5 class="card-title">ToDo List</h5></div>
+              <img class="card-img-top" src="/img/projects/1todo-list.png" alt="Project interface visualisation">
+              <div class="card-body">
+                <!-- <h5 class="card-title">ToDo List</h5>                 -->
+                <p class="card-text">A to-do list creator.</p>
+                <p class="card-text">HTML, CSS, JavaScript</p>
+              </div>
+              <!-- <div class="card-footer text-muted"> -->
+              <div class="card-footer">
+                <p>View on GitHub:</p>
+                <div class="btn-group">
+                  <button class="btn"><a href="https://github.com/emzys/ToDo-List">Repository</a></button>
+                  <button class="btn"><a href="https://emzys.github.io/ToDo-List/">Pages (live)</a></button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="about about-text">
-            <h1 class="display-4">My projetcs</h1>
-            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iure cumque reiciendis ipsum, corrupti
-              praesentium aliquam in voluptatum repudiandae amet explicabo enim repellendus, temporibus itaque odit modi
-              dignissimos autem saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos dolorem quod totam
-              consectetur, dolor quasi, aspernatur non, alias iure animi sunt omnis ratione dignissimos explicabo illum
-              nesciunt quas cupiditate quisquam?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio vero fugit nihil illum reiciendis
-              distinctio tempore, libero adipisci debitis odio ducimus error. Illum tempora voluptas soluta accusamus
-              nam quibusdam ducimus.about </p>
-          </div>
-
-
         </div>
       </div>
     </section>
