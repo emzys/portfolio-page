@@ -1,6 +1,6 @@
 $blue-color: #039dff
 $gray-color: #e9ecef
-// $blue-color: #1e91da
+$dark-color: #222222
     
 *, *::after, *::before
     box-sizing: border-box
@@ -14,7 +14,7 @@ body
     position: relative
     font-family: 'Montserrat', sans-serif
     background-color: $gray-color 
-    color: #222 
+    color: $dark-color 
 
 .underline 
     margin: 0 auto
@@ -27,7 +27,6 @@ body
 nav 
     text-transform:  uppercase
     transition: background-color .5s
-    // font-weight: bold
     
     a, i 
         padding: 0 10px
@@ -47,9 +46,6 @@ nav
     .navbar-nav
         font-size: 17px
 
-// .nav-link
-//     padding: 8px 15px
-
 .shadow-bg
     background-color: rgba(0,0,0,.8)
 
@@ -57,7 +53,6 @@ nav
 //HEARDER
 
 header
-    // color: white
     color: $gray-color
     text-shadow: 2px 2px black
 
@@ -86,21 +81,15 @@ header
     text-align: center
     height: 70%
     width: 50%
-    // padding: 10px
-    // margin-block: 0
 
     h1 
-        // padding: 10px
         text-transform: uppercase
-        // font-size: 48px
-        // font-weight: bold
         margin: 0 15px
 
     p 
         font-family: 'Playfair Display', serif
         font-style: italic
         margin: 15px
-        // font-size: 20px
 
 .arrow
     position: absolute
@@ -112,7 +101,7 @@ header
     animation: bounce 1.6s infinite
     padding: 20px
     font-size: 25px
-    color: #fff
+    color: $gray-color
     transition: color .3s
 
 .fa-chevron-down:hover 
@@ -129,12 +118,7 @@ header
     display: flex
     flex-direction: column
     align-items: center
-    // justify-content: space-evenly
-    // justify-content: space-around
     justify-content: center
-    // margin: 100px 0
-    // height: 100vh
-    // width: 80%
     max-width: 2560px
     padding: 70px 20px
 
@@ -153,7 +137,7 @@ header
         border-radius: 50%
 
     .dot-black
-        background-color: #222 
+        background-color: $dark-color 
 
     .dot-blue
         background-color: $blue-color
@@ -176,7 +160,7 @@ header
        
     .dot-margin
         margin: 50px
-            
+
     h1, h2
         text-align: center
         margin-bottom: 20px
@@ -185,9 +169,7 @@ header
         color: $blue-color
 
     a:hover 
-        // color: #73b9fa
         color: #77cafd 
-        // text-shadow: 2px 2px black
         text-decoration: none
 
     .between
@@ -207,27 +189,20 @@ header
         transform: translateX(-50%)
 
         .card
-            // height: 610px
             img
                 margin-top: 10px
-                // height: 350px
                 object-fit: fill
                 top: 0
 
             .card-body, .card-footer
                 padding: 10px
-            
-            .card-img-top
-                // margin: 0
 
         h5 
             font-style: italic
-            // font-weight: bold
             font-size: 22px
         
         p 
             14px
-
 
 
 //PROJECT SECTION
@@ -245,13 +220,12 @@ header
 
         .card
             width: 280px
-            margin: 10px
+            margin: 10px 15px 30px 
             padding: 0
             transition: transform .3s
 
             img
                 height: 280px
-                // width: 276px
                 box-shadow: 0 0 2px black
 
             .card-title
@@ -259,12 +233,12 @@ header
                 font-weight: bold
         
         .card:hover
-            transform: scale(.97)
+            transform: scale(.98)
                 
 
         .btn
             padding: 2px 10px
-            background-color: #222
+            background-color: $dark-color
             border: 1px solid $gray-color
             transition: background-color .3s, border .3s
 
@@ -275,23 +249,19 @@ header
 
         .btn:hover
             background-color: $gray-color
-            border: 1px solid #222
+            border: 1px solid $dark-color
     
             a:hover 
-                color: #222
+                color: $dark-color
         
-
 
 //CONTACT
 #contact
-    // margin-bottom: 0
-
     .contact-img
         position: relative
         height: 80vh
         background-image: url(../img/contact/contact-1-sm.jpg)
         background-position: center
-        // object-fit: contain
         background-attachment: fixed
         background-size: cover
         z-index: 0
@@ -323,12 +293,6 @@ header
         .social-media i:hover
             color: $blue-color
 
-
-
-
-
-// font-family: 'Playfair Display', serif;
-// font-family: 'Montserrat', sans-serif;
 
 
 @media (min-width: 360px)
