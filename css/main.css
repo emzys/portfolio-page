@@ -301,6 +301,10 @@ header {
   font-weight: bold;
 }
 
+#projects .project-list .card .card-text {
+  font-size: 14px;
+}
+
 #projects .project-list .card:hover {
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
