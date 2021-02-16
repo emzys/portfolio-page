@@ -60,6 +60,10 @@
           flex-direction: row-reverse;
 }
 
+.project-list {
+  width: 90%;
+}
+
 #contact .contact-img {
   background-image: url(../img/contact/contact-3-lg.jpg);
 }
@@ -77,7 +81,7 @@
   .hero-text p {
     font-size: 30px;
   }
-  .container {
+  .container, .project-list {
     width: 85%;
   }
 }
@@ -95,7 +99,7 @@
   .hero-text p {
     font-size: 40px;
   }
-  .container {
+  .container, .project-list {
     width: 70%;
   }
 }

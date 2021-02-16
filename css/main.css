@@ -244,9 +244,8 @@ header {
 
 .container .card-deck .card img {
   margin-top: 10px;
-  -o-object-fit: fill;
-     object-fit: fill;
-  top: 0;
+  width: 100px;
+  border-radius: 3%;
 }
 
 .container .card-deck .card .card-body, .container .card-deck .card .card-footer {
@@ -256,6 +255,7 @@ header {
 .container .card-deck h5 {
   font-style: italic;
   font-size: 22px;
+  margin-bottom: 10px;
 }
 
 #projects .project-list {
@@ -291,9 +291,13 @@ header {
 }
 
 #projects .project-list .card img {
-  height: 280px;
+  height: 190px;
   -webkit-box-shadow: 0 0 2px black;
           box-shadow: 0 0 2px black;
+}
+
+#projects .project-list .card .card-header, #projects .project-list .card .card-body, #projects .project-list .card .card-footer {
+  padding: 10px;
 }
 
 #projects .project-list .card .card-title {
@@ -303,6 +307,10 @@ header {
 
 #projects .project-list .card .card-text {
   font-size: 14px;
+}
+
+#projects .project-list .card .card-text:first-child, #projects .project-list .card .card-footer p {
+  margin-bottom: 10px;
 }
 
 #projects .project-list .card:hover {
@@ -397,12 +405,6 @@ header {
   }
   .container .card-deck h5 {
     font-size: 24px;
-  }
-  .container .card-deck .card img {
-    margin-top: 20px;
-  }
-  .container .card-deck .card .card-body, .container .card-deck .card .card-footer {
-    padding: 20px;
   }
   #contact .contact-text p {
     font-size: 23px;
