@@ -191,8 +191,8 @@ header
         .card
             img
                 margin-top: 10px
-                object-fit: fill
-                top: 0
+                width: 100px
+                border-radius: 3%
 
             .card-body, .card-footer
                 padding: 10px
@@ -200,6 +200,7 @@ header
         h5 
             font-style: italic
             font-size: 22px
+            margin-bottom: 10px
         
         p 
             14px
@@ -225,8 +226,11 @@ header
             transition: transform .3s
 
             img
-                height: 280px
+                height: 190px
                 box-shadow: 0 0 2px black
+
+            .card-header, .card-body, .card-footer
+                padding: 10px
 
             .card-title
                 margin: 0
@@ -234,6 +238,10 @@ header
 
             .card-text
                 font-size: 14px
+
+            .card-text:first-child, .card-footer p
+                margin-bottom: 10px
+
 
         .card:hover
             transform: scale(.98)
@@ -325,13 +333,6 @@ header
 
             p 
                 16px
-
-            .card
-                img
-                    margin-top: 20px
-
-                .card-body, .card-footer
-                    padding: 20px
 
     #contact
         .contact-text 
