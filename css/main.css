@@ -258,6 +258,30 @@ header {
   margin-bottom: 10px;
 }
 
+#skills .skills-icons {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#skills .skills-icons p {
+  font-size: 12px;
+}
+
+#skills .skills-icons .upper {
+  margin: 30px auto 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#skills .skills-icons .upper i {
+  font-size: 40px;
+}
+
+#skills .skills-text {
+  margin-top: 30px;
+}
+
 #projects .project-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -322,6 +346,7 @@ header {
   padding: 2px 10px;
   background-color: #222222;
   border: 1px solid #e9ecef;
+  width: 80px;
   -webkit-transition: background-color .3s, border .3s;
   transition: background-color .3s, border .3s;
 }
